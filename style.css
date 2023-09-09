@@ -1,0 +1,14 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(209, 12, 209);
+}
+.texto{
+    font-size: 50px;
+}
+.bloco{
+    display: inline-block;
+}
