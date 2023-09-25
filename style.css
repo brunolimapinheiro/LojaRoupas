@@ -5,7 +5,9 @@
 
 body{
     background-color: rgb(209, 12, 209);
-    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+   
 }
 .texto{
     font-size: 50px;
@@ -16,8 +18,10 @@ body{
    justify-content: space-between;
    background-color: rgb(29, 26, 26);
    padding: 10px;
+    width: 100vw;
+
 }
-.cabecalho > a > img{
+.cabecalho > div > a > img{
     border-radius: 50%;
     padding: 5px;
    
@@ -27,20 +31,39 @@ body{
     justify-content: space-between;
 }
 
-.cabecalho > nav > a{
+.cabecalho > nav > .links > a{
     text-decoration: none;
     padding:10px ;
+}
+
+.buton{
+    margin-right: 10px;
+    padding: 10px 30px 0px 0px
+}
+
+.buton > .criar{
+    background-color:rgb(209, 12, 209) ;
+    border-radius: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+.criar:hover{
+    background-color:rgb(25, 25, 248) ;
 }
 
 .textoF{
     font-size:30px;
     text-align: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
+    opacity: 0;
+    transition: all 2s;
     
 }
 .bloco{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .card{
@@ -77,6 +100,32 @@ body{
     text-align: center;
 }
 
+.position > .formu > form > input {
+    height: 15%;
+    width: 40%;
+ 
+}
+
+.position > .formu > .novaC{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.position > .formu > .novaC > div{
+    display: inline-block;
+}
+
+.position >.formu > .novaC  > input{
+    margin: 2px;
+    padding: 4px;
+    border-radius: 5px;
+   
+
+}
+
+
+
 .position2{
     margin-top:10% ;
     text-align: justify;
@@ -84,32 +133,43 @@ body{
 }
 
 .blog{
+
     text-align: center;
     font-size: 20px;
+    min-height: 100vh;
+    opacity: 0;
+    transition: all 1s;
+
 
 }
+
 
 .formu{
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    padding: 30px 30px 30px 30px ;
+    padding: 20px 20px 20px 20px ;
     height: 50vh;
-    margin: 10px 350px 350px 350px;
+    margin: 10px 390px 390px 390px;
     background-color: white;
     border-radius: 10px;
+    transform: translateY(80%);
+    opacity: 0;
+    transition: all 3s;
 }
-.formu > form > button{
+.formu > form  > button{
     padding: 5px;
     background-color: rgb(25, 25, 248);
     color: white;
     border: none;
     border-radius: 10px;
     width: 140px;
-    height: 40px;
+    height: 50px;
+    margin-top:5px;
 }
 .formu > form > button:hover {
-    background-color:rgb(209, 12, 209)  ;
+    background-color:rgb(209, 12, 209);
+    cursor: pointer;
 }   
 
 
@@ -130,10 +190,99 @@ body{
     background-color: rgb(209, 12, 209) ;
 }
 
-footer{
-    background-color: white;
-    text-align: center;
-    margin: 10px;
-    width: 100vw;
-    font-size: 20px;
+.conteiner{
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
 }
+
+.conteiner > .parceiros{
+    display: flex;
+    text-align: center;
+}
+
+.logoP{
+    margin-right: 15% ;
+    display: inline-block;
+    padding: 10px;
+    opacity: 0;
+    transition: all 1s;
+    transform: translateY(90%);
+}
+
+.logoP > img{
+    border-radius: 50%;
+}
+
+.rodape{
+    background-color: white;
+    width: 100vw;
+    height: 15vh;
+    padding:10px 0px 10px 0px;
+    
+}
+.bloqui{
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+
+}
+
+.redes{
+    margin: 0px 100px 0px 100px;
+}
+
+.redes_sociais{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 30px 0px 0px;
+}
+
+
+footer{
+    padding-top: 3vh;
+    background-color: black;
+  
+}
+@media(max-width:870px){
+  .cabecalho >  nav  {
+    display:none;
+  }
+  main {
+    text-align: center;
+  }
+  .bloco{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 100px;
+}
+.card{
+    display: inline-block;
+    background-color: white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+ .formu{
+        border: 2px solid black;
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        margin: 10px 30px 30px 30px;
+        background-color: white;
+        border-radius: 10px;
+        transform: translateY(80%);
+        opacity: 0;
+        transition: all 3s;
+    
+    }
+
+.caixa{
+   padding: 50px;
+}
+}
+
+  

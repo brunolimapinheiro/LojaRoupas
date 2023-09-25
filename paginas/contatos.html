@@ -5,20 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="../imagem/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../imagem/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../imagem/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
 <body>
   <header>
     <div class="cabecalho">
-      <a href="index.html"><img src="../imagem/OIP.jpg" alt="" height="50px" width="50px"></a>
+      <div style="display: inline-block;">
+        <a href="../index.html"><img src="../imagem/dona maria.jpeg" alt="" height="50px" width="50px"></a>
+      </div>
       <nav>
-        <a href="../index.html">Inicio</a>
-        <a href="login.html">Criar conta</a>
-        <a href="parceiros.html">Parceiros</a>
-        <a href="blog.html">blog</a>
-        <a href="contatos.html">Contatos</a>
+        <div class="links">
+          <a href="../index.html">Inicio</a>
+          <a href="blog.html">Blog</a>
+          <a href="parceiros.html">Parceiros</a>
+          <a href="contatos.html">Duvidas</a>
+        </div>
       </nav>
+      <div class="buton">
+        <a class="criar" href="login.html">Criar conta</a>
+      </div>
     </div>
 </header>
+  <main>
 
+        <div class="caixa">
+          <div class="textoF">
+              <p>Duvidas? </p>
+              <p>Envie-nos para nos sua duvida</p>
+          </div>
+          <div class="position">
+           <div class="formu">
+              <form class="novaC" action="#" method="post">
+                <div>
+                  <label for="nome">Nome</label></div>
+                  <input type="text" name="nome" id="nome">
+                <div>
+                  <label for="tele">Telefone</label></div>
+                  <input type="tel" name="" id="">
+                <div>
+                  <label for="email">E-Mail</label></div>
+                  <input type="email" name="email" required>
+                  <div><label for="mensagem">Mensagem</label></div>
+                  <textarea id="duvida" name="mensagem" placeholder="Digite sua dúvida aqui" rows="8" cols="50"></textarea>
+
+                  
+                  <button type="submit">Enviar</button>
+                  
+              </div> 
+          
+          </div>
+      </form>
+  </main>
+  <script src="../scrips/script3.js"></script>
 </body>
 </html>
