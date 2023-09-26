@@ -222,6 +222,20 @@ body{
     padding:10px 0px 10px 0px;
     
 }
+.rodape2{
+    padding: 30px;
+}
+
+.rodape2 > .infor{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.rodape2 > .infor > a{
+    padding: 10px;
+    text-decoration: none;
+}
+
 .bloqui{
     text-align: center;
     display: inline-block;
@@ -250,6 +264,9 @@ footer{
 @media(max-width:870px){
   .cabecalho >  nav  {
     display:none;
+  }
+  .buton > .criar {
+    display: none;
   }
   main {
     text-align: center;

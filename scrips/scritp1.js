@@ -1,7 +1,10 @@
-const logo = document.querySelectorAll('logoP');
+const logo = document.querySelectorAll(' .logoP ');
 console.log(logo);
-function subir(){
-    logo.style.opacity =1;
-    logo.style.transform = 'translateX(0)';
-}
 
+
+logo.forEach(item =>{
+    setInterval(()=>{
+        item.style.transform='translateY(0)';
+        item.style.opacity =1;
+    } ,10 );
+})
